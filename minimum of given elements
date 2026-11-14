@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void main()
+{
+    int m[5], i, min;
+    printf("Enter 5 values: ");
+    
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &m[i]);
+    }
+    
+    min = m[0];
+    
+    for(i = 0; i < 5; i++)
+    {
+        if(m[i] < min)
+        {
+            min = m[i];
+        }
+    }
+    
+    printf("Min = %d", min);
+}
